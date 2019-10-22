@@ -1,0 +1,131 @@
+\documentclass[11pt, a4paper, sans]{moderncv}
+
+\moderncvstyle{banking}
+\definecolor{color1}{RGB}{73,91,115}
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+
+\usepackage{import}
+
+\name{Denisenko}{Natalya}
+%\title{Cirriculum Vitae}
+
+\newcommand*{\customcventry}[7][.25em]{
+    \begin{tabular}{@{}l}
+        {\bfseries #4}
+    \end{tabular}
+    \hfill
+    \begin{tabular}{l@{}}
+        {\bfseries #5}
+    \end{tabular} \\
+    \begin{tabular}{@{}l}
+        {\itshape #3}
+    \end{tabular}
+    \hfill
+    \begin{tabular}{l@{}}
+        {\itshape #2}
+    \end{tabular}
+    \ifx&#7&
+    \else{\\
+    \begin{minipage}{\maincolumnwidth}
+        \small#7
+    \end{minipage}}\fi
+    \par\addvspace{#1}
+}
+
+\setlength{\tabcolsep}{12pt}
+
+\begin{document}
+    \makecvtitle
+    \vspace*{-20mm}
+
+    \begin{center}
+        \begin{tabular}{ c c c }
+            \faEnvelopeO\enspace s18b1\_denisenko@179.ru & \faGithub\enspace \href{https://github.com/nd0761}{nd0761} & \faMobile\enspace +7 (909) 157-40-46 \\
+        \end{tabular}
+    \end{center}
+
+    \section{Education}{
+        \customcventry{2018 -- 2022}{Bachelor of Science in Applied Mathematics and Computer Science. 3.69/4.33 GPA}{National Research University "Higher School of Economics"}{Moscow, Russia}{}{}{
+            \underline{\normalsize Relevant courses:}
+
+            \begin{cvcolumns}
+                \cvcolumn{}{
+                    \begin{itemize}
+                        \item Algorithms and Data Structures
+                        \item C++ programming
+                        \item Mathematical analysis
+                        \item Discrete mathematics
+                    \end{itemize}
+                }
+                \cvcolumn{}{
+                    \begin{itemize}
+                        \item Linear algebra
+                        \item Python programming
+                        \item Probability theory
+                    \end{itemize}
+                }
+            \end{cvcolumns}
+        }
+        \customcventry{2019 -- 2021}{Minor course of Bioinformatics}{National Research University "Higher School of Economics"}{Moscow, Russia}{}{}{}
+    }
+
+    \section{Experience}{
+        \customcventry{Autumn 2017}{Assistant}{School mathematical club}{Moscow, Russia}{}{
+            \begin{itemize}
+              \item Task verification.\\
+            \end{itemize}
+        }
+        \customcventry{August 2019}{Teacher}{Multinational summer school "Delta"}{Russia/Germany}{}{
+            \begin{itemize}
+              \item Conducted courses: Algebra, Structures, Graphs and algorithms, Cryptography.
+              \item Project assistance.\\
+            \end{itemize}
+        }
+        \customcventry{Autumn 2019}{Student}{Sirius + Yandex school in machine learning}{Sochi, Russia}{}{
+            \begin{itemize}
+              \item Project\\
+            \end{itemize}
+        }
+    }
+
+    \section{Cources}{
+        \cvitem{Coursera}{}
+            \begin{itemize}
+              \item Mathematics and Python for data analysis
+            \end{itemize}
+    }
+
+    % \section{Relevant Projects}{
+    %    TODO
+    % }
+
+    \section{Key Skills}{
+        \cvitem{Programming Languages}{C/C++, Python, \LaTeX}
+        \cvitem{Languages}{Russian (Native), English (Upper-Intermediate), German (A1)}
+    }
+
+    \section{Achievements and Awards}{
+        \cvitem{2018}{1st degree award in "Lomonosov" olympiad in Informatics}
+        \cvitem{2018}{1st degree award in SPbSU olympiad in Mathematics}
+        \cvitem{2017}{Prizewinner in "Moscow  olympiad" in Informatics}
+        \cvitem{2017, 2018}{Prizewinner of Regional Level of Russian National Olympiad in Mathematics, Informatics, and Physics}
+        \cvitem{2015-2016}{winner in "Moscow team olympiad" league B in Informatics}
+    }
+
+    \section{Extracurricular activities}{
+        \cvitem{Interests}{}
+            \begin{itemize}
+              \item Mountain skiing
+              \item Design
+              \item Digital art\\
+            \end{itemize}
+    }
+\end{document}
