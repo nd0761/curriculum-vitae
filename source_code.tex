@@ -1,0 +1,131 @@
+\documentclass[11pt, a4paper, sans]{moderncv}
+
+\moderncvstyle{banking}
+\definecolor{color1}{RGB}{73,91,115}
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+
+\usepackage{import}
+
+\name{Natalia}{Denisenko}
+%\title{Cirriculum Vitae}
+
+\newcommand*{\customcventry}[7][.25em]{
+    \begin{tabular}{@{}l}
+        {\bfseries #4}
+    \end{tabular}
+    \hfill
+    \begin{tabular}{l@{}}
+        {\bfseries #5}
+    \end{tabular} \\
+    \begin{tabular}{@{}l}
+        {\itshape #3}
+    \end{tabular}
+    \hfill
+    \begin{tabular}{l@{}}
+        {\itshape #2}
+    \end{tabular}
+    \ifx&#7&
+    \else{\\
+    \begin{minipage}{\maincolumnwidth}
+        \small#7
+    \end{minipage}}\fi
+    \par\addvspace{#1}
+}
+
+\setlength{\tabcolsep}{12pt}
+\documentclass[]{}
+
+\begin{document}
+    \makecvtitle
+    \vspace*{-20mm}
+
+    \begin{center}
+        \begin{tabular}{ c c c }
+            \faEnvelopeO\enspace \href{mailto:deni.nat.and@gmail.com}{deni.nat.and@gmail.com}& \faGithub\enspace \href{https://github.com/nd0761}{nd0761} & \faMobile\enspace +7 (909) 157-40-46 \\
+        \end{tabular}
+    \end{center}
+
+    \section{Education}{
+        \customcventry{2018 -- 2022}{Bachelor of Science in Applied Mathematics and Computer Science. 3.5/4 GPA}{National Research University "Higher School of Economics"}{Moscow, Russia}{}{}{
+            \underline{\normalsize Relevant courses:}
+
+            \begin{cvcolumns}
+                \cvcolumn{}{
+                    \begin{itemize}
+                        \item Algorithms and Data Structures
+                        \item C++ programming
+                        \item Machine Learning
+                        \item Java
+                    \end{itemize}
+                }
+                \cvcolumn{}{
+                    \begin{itemize}
+                        \item Python programming
+                        \item Probability theory
+                        \item Deep Learning
+                        \item Minor in Bioinformatics
+                    \end{itemize}
+                }
+            \end{cvcolumns}
+        }
+    }
+
+    \section{Experience}{
+        \customcventry{06 July 2020 - 25 September 2020}{Intern}{Google, Remote EMEA STEP internship}{London/Moscow}{}{
+            \begin{itemize}
+              \item A web server project with multinational team of two interns and two mentors
+              \item We used multiple google APIs such as: dataStore service, cloud store, maps API
+              \item Also, Google project system was used to write the code, test it, and in the end, deploy it using maven
+              \item Our server allows multiple people to create and edit their future traveling route simultaneously
+              \item At the request of users, route could be simplified using directions API
+              \item Favourite routes could be stored and later restored at any time
+              \enspace(\faGithub\enspace \href{https://github.com/googleinterns/step227-2020}{TheGlobetrotter)}\\
+            \end{itemize}
+        }
+    }
+    \section{Projects}{
+        \customcventry{Autumn 2019}{}{Yandex}{Sochi, Russia}{}{
+            \begin{itemize}
+            \item Scientific and practical reproduction of state-of-the-art scientific results
+              \item Team project of three students and two mentors 
+              \item Implemented generative adversarial network with protection against attempts to obtain the original data using Membership Inference Attacks
+              \enspace(\faGithub\enspace \href{https://github.com/Private-ML/gan}{Private-ML)}\\
+            \end{itemize}
+        }
+        \customcventry{2019-2021}{}{National Research University "Higher School of Economics"}{Moscow, Russia}{}{
+            \begin{itemize}
+                \item Implemented EM algorithm for expert's assessment
+                \item Implemented LSTM cell and its RNN layer
+                \item Implemented Boosting and Bagging
+                \item Deployed model for MNIST classification with SVM and keras approximation
+                \item Implemented model for fine motor skills recognition using LSTM
+                \item Implemented model to classify code chunks, collected from Kaggle competitions 
+            \end{itemize}
+        }
+    }
+
+    \section{Achievements and Awards}{
+        {1st degree award in "Lomonosov" MSU olympiad in Informatics} \hfill \textit{2018}
+        
+        {1st degree award in SPbSU olympiad in Mathematics}\hfill \textit{2018}
+        
+        {Scholarship From the President of the Russian Federation}\hfill \textit{2018}
+        
+        {1C scholarship for the success of team project in fine motor skills recognition}\hfill \textit{2020}
+        
+        {State Scholarship for high academic achievements (HSE)}\hfill \textit{2018-Present}
+    }
+
+    \section{Key Skills}{
+        \cvitem{Programming Languages}{Python, C/C++, Java, JavaScript, HTML, CSS}
+        \cvitem{Languages}{Russian (native), English (fluent)}
+    }
+\end{document}
